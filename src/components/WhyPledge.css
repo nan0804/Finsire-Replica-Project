@@ -1,0 +1,82 @@
+:root {
+  --bg: #f9fbfc;
+  --border: #e3e8ee;
+  --green: #0b7285;
+  --muted: #6b7280;
+  --radius: 16px;
+  --shadow: 0 14px 30px rgba(0, 0, 0, 0.08);
+}
+
+.pledge-section {
+  padding: 100px 0;
+  background: #ffffff;
+}
+
+.pledge-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 24px;
+}
+
+.pledge-card {
+  background: var(--bg);
+  border: 1.5px solid var(--border);
+  border-radius: var(--radius);
+  overflow: hidden;
+  transition: all 0.3s ease;
+  cursor: default;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.pledge-card:hover {
+  border-color: var(--green);
+  transform: translateY(-4px);
+  box-shadow: var(--shadow);
+  background: #ffffff;
+}
+
+.pledge-card-img {
+  width: 100%;
+  height: 160px;
+  object-fit: contain;
+  padding: 24px;
+  background: #ffffff;
+  display: block;
+  margin: 0 auto;
+}
+
+.pledge-card h3 {
+  font-size: 17px;
+  font-weight: 700;
+  margin: 16px 20px 8px;
+  color: #0d3d4f;
+  font-style: italic;
+}
+
+.pledge-card p {
+  font-size: 14px;
+  color: var(--muted);
+  line-height: 1.75;
+  margin: 0 20px 24px;
+}
+
+.pledge-note {
+  font-size: 15px;
+  color: var(--muted);
+  margin-top: 48px;
+  margin-bottom: 8px;
+  font-style: italic;
+}
+
+@media (max-width: 768px) {
+  .pledge-section {
+    padding: 60px 0;
+  }
+
+  .pledge-card-img {
+    height: 140px;
+    padding: 20px;
+  }
+}

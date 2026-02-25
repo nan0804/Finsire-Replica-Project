@@ -1,0 +1,39 @@
+.stats-bar {
+  background: var(--green);
+  padding: 36px 60px;
+}
+.stats-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 28px;
+}
+.stat {
+  text-align: center;
+}
+.stat-num {
+  font-family: 'Sora', sans-serif;
+  font-size: 36px;
+  font-weight: 800;
+  color: white;
+  line-height: 1;
+  letter-spacing: -1px;
+}
+.stat-label {
+  font-size: 13px;
+  color: rgba(255,255,255,0.72);
+  margin-top: 6px;
+  font-weight: 500;
+}
+@media (max-width: 768px) {
+  .stats-bar {
+    padding: 28px 24px;
+  }
+  .stats-inner {
+    justify-content: center;
+    gap: 20px 40px;
+  }
+}

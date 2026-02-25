@@ -1,0 +1,251 @@
+.gl-page {
+  display: grid;
+  grid-template-columns: 55% 45%;
+  min-height: 100vh;
+  background: #061a24;
+}
+
+.gl-left {
+  padding: 52px 60px 60px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.gl-back {
+  font-size: 13px;
+  color: rgba(255,255,255,0.35);
+  margin-bottom: 24px;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  transition: color 0.2s;
+  text-decoration: none;
+}
+.gl-back:hover { color: rgba(255,255,255,0.7); }
+
+.gl-illustration {
+  width: 100%;
+  max-width: 380px;
+  margin-bottom: 40px;
+}
+
+.gl-svg {
+  width: 100%;
+  height: auto;
+}
+
+.gl-left h1 {
+  font-family: 'Sora', sans-serif;
+  font-size: clamp(32px, 4vw, 52px);
+  font-weight: 800;
+  color: #ffffff;
+  letter-spacing: -1px;
+  line-height: 1.15;
+  margin-bottom: 20px;
+}
+
+.gl-left p {
+  font-size: 17px;
+  color: rgba(255,255,255,0.45);
+  line-height: 1.7;
+}
+
+.gl-right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 52px 48px;
+  background: #061a24;
+}
+
+.gl-card {
+  background: #0d2d3d;
+  border-radius: 20px;
+  padding: 40px 36px 36px;
+  width: 100%;
+  max-width: 500px;
+  box-shadow: 0 24px 60px rgba(0,0,0,0.4);
+}
+
+.gl-card h2 {
+  font-family: 'Sora', sans-serif;
+  font-size: 26px;
+  font-weight: 800;
+  color: #ffffff;
+  margin-bottom: 8px;
+}
+
+.gl-subtitle {
+  font-size: 14px;
+  color: rgba(255,255,255,0.45);
+  margin-bottom: 28px;
+  line-height: 1.6;
+}
+
+.gl-fields {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-bottom: 6px;
+}
+
+.gl-field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-bottom: 14px;
+}
+
+.gl-field label {
+  font-size: 14px;
+  font-weight: 600;
+  color: rgba(255,255,255,0.75);
+}
+
+.gl-input {
+  padding: 15px 18px;
+  background: #0a2232;
+  border: 1.5px solid #1a3f52;
+  border-radius: 10px;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 15px;
+  color: #22d3ee;
+  outline: none;
+  transition: border-color 0.2s, box-shadow 0.2s;
+  width: 100%;
+}
+
+.gl-input::placeholder { color: #1e5468; }
+
+.gl-input:focus {
+  border-color: #22d3ee;
+  box-shadow: 0 0 0 3px rgba(34,211,238,0.1);
+}
+
+.gl-input-error {
+  border-color: #ef4444 !important;
+}
+
+.gl-error {
+  font-size: 12px;
+  color: #f87171;
+}
+
+.gl-consent-area {
+  background: #0a2232;
+  border-radius: 12px;
+  padding: 20px;
+  margin-top: 8px;
+}
+
+.gl-consent-row {
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+  margin-bottom: 20px;
+}
+
+.gl-consent-row p {
+  font-size: 13px;
+  color: rgba(255,255,255,0.5);
+  line-height: 1.65;
+}
+
+.gl-consent-error {
+  outline: 1px solid #ef4444;
+  border-radius: 8px;
+  padding: 8px;
+}
+
+.gl-checkbox {
+  width: 18px;
+  height: 18px;
+  min-width: 18px;
+  border: 2px solid #1a3f52;
+  border-radius: 4px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2px;
+  transition: all 0.15s;
+  background: transparent;
+}
+
+.gl-checkbox-checked {
+  background: #4ade80;
+  border-color: #4ade80;
+}
+
+.gl-checkbox svg {
+  width: 10px;
+  height: 10px;
+}
+
+.gl-link {
+  color: #4ade80;
+  font-weight: 600;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+.gl-link:hover { color: #86efac; }
+
+.gl-signup-btn {
+  width: 100%;
+  padding: 16px;
+  background: #4ade80;
+  color: #0a1a0a;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 17px;
+  font-weight: 800;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.15s;
+  letter-spacing: 0.2px;
+  margin-bottom: 16px;
+}
+
+.gl-signup-btn:hover {
+  background: #86efac;
+  transform: translateY(-1px);
+}
+
+.gl-login-row {
+  text-align: center;
+  font-size: 13px;
+  color: #22d3ee;
+  opacity: 0.7;
+}
+
+.gl-login-link {
+  color: #22d3ee;
+  font-weight: 700;
+  text-decoration: underline;
+  opacity: 1;
+}
+
+.gl-success-card {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+
+.gl-success-icon { font-size: 52px; }
+
+.gl-success-card h2 { margin-bottom: 0; }
+
+.gl-success-card p {
+  font-size: 15px;
+  color: rgba(255,255,255,0.5);
+  line-height: 1.7;
+}
+
+@media (max-width: 900px) {
+  .gl-page { grid-template-columns: 1fr; }
+  .gl-left { padding: 40px 24px 48px; }
+  .gl-right { padding: 0 24px 60px; }
+}

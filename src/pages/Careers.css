@@ -1,0 +1,115 @@
+.careers-wrapper {
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #edf2f7;
+  padding: 60px 24px;
+  position: relative;
+  overflow: hidden;
+}
+.careers-bg-left {
+  position: absolute;
+  left: -60px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 280px;
+  height: 340px;
+  border: 2px solid rgba(13,61,79,0.06);
+  border-radius: 16px;
+  pointer-events: none;
+}
+.careers-bg-right {
+  position: absolute;
+  right: -60px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 280px;
+  height: 340px;
+  border: 2px solid rgba(13,61,79,0.06);
+  border-radius: 16px;
+  pointer-events: none;
+}
+.careers-card {
+  background: #fff;
+  border-radius: 20px;
+  padding: 60px 56px 48px;
+  text-align: center;
+  max-width: 680px;
+  width: 100%;
+  position: relative;
+  z-index: 1;
+  box-shadow: 0 2px 40px rgba(0,0,0,0.04);
+}
+.careers-cup {
+  width: 200px;
+  height: auto;
+  object-fit: contain;
+  margin-bottom: 36px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.careers-card h1 {
+  font-family: 'Sora', sans-serif;
+  font-size: clamp(26px, 4vw, 40px);
+  font-weight: 800;
+  font-style: italic;
+  color: #0d3d4f;
+  letter-spacing: -0.5px;
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+.careers-card p {
+  font-size: 16px;
+  color: #374151;
+  line-height: 1.7;
+  font-weight: 500;
+  margin-bottom: 44px;
+}
+.careers-ctas {
+  display: flex;
+  align-items: stretch;
+  border-top: 1px solid #e5e7eb;
+  padding-top: 32px;
+  gap: 0;
+}
+.careers-cta-item {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+.careers-cta-divider {
+  width: 1px;
+  background: #e5e7eb;
+  margin: 0 24px;
+  flex-shrink: 0;
+}
+.careers-cta-label {
+  font-size: 14px;
+  color: #9ca3af;
+  font-weight: 400;
+}
+.careers-cta-link {
+  font-size: 17px;
+  font-weight: 700;
+  color: #0d3d4f;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  transition: color 0.2s;
+}
+.careers-cta-link:hover { color: #1b7a8c; }
+.careers-arrow {
+  font-size: 14px;
+  font-style: normal;
+}
+@media (max-width: 600px) {
+  .careers-card { padding: 48px 24px 36px; }
+  .careers-ctas { flex-direction: column; gap: 24px; }
+  .careers-cta-divider { width: 100%; height: 1px; margin: 0; }
+}

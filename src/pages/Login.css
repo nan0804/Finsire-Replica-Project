@@ -1,0 +1,63 @@
+.login-card {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.login-field-wrap {
+  margin-bottom: 0;
+  flex: 1;
+}
+
+.login-float-field {
+  position: relative;
+  margin-top: 8px;
+}
+
+.login-input {
+  padding: 22px 18px 14px !important;
+  width: 100%;
+}
+
+.login-float-label {
+  position: absolute;
+  top: -10px;
+  left: 14px;
+  font-size: 13px;
+  font-weight: 600;
+  color: rgba(255,255,255,0.6);
+  background: #0a2232;
+  padding: 0 6px;
+  pointer-events: none;
+}
+
+.login-bottom {
+  background: #0a2e3e;
+  margin: 28px -36px -36px;
+  padding: 28px 36px 32px;
+  border-radius: 0 0 20px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.login-bottom .gl-signup-btn {
+  margin-bottom: 0;
+}
+
+.login-bottom .gl-login-row {
+  text-align: center;
+}
+
+.login-bottom .gl-login-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 14px;
+  color: #22d3ee;
+  font-weight: 600;
+  text-decoration: none;
+  opacity: 0.85;
+  transition: opacity 0.2s;
+}
+.login-bottom .gl-login-link:hover { opacity: 1; }
