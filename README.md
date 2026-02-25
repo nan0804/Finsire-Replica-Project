@@ -1,10 +1,11 @@
 Finsire Clone — React
 
 A pixel-faithful clone of [finsire.com](https://www.finsire.com) built with React.
+This project is a UI replica of the official Finsire website, built using React.
+The goal is to closely match the layout, styling, and responsiveness of the original site.
 
 Project Structure
 
-```
 finsire-clone/
 ├── public/
 │   └── index.html
@@ -73,7 +74,7 @@ finsire-clone/
 │
 └── package.json
 └── README.md
-```
+
 
 Getting Started
 
@@ -83,23 +84,17 @@ Getting Started
 
  Installation
 
-```bash
- 1. Navigate into the folder
-cd finsire-clone
-
- 2. Install dependencies
+ 1. Install dependencies
 npm install
 
-# 3. Start the dev server
+ 2. Start the server
 npm start
-```
+
 
 The app will open at http://localhost:3000
 
  Build for Production
+   npm run build
 
-```bash
-npm run build
-```
 
 
