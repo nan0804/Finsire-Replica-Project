@@ -94,7 +94,7 @@ npm start
 The app will open at http://localhost:3000
 
  Build for Production
-   npm run build
+ npm run build
 
 
 
