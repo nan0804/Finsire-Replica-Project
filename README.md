@@ -1,102 +1,102 @@
-# Finsire Clone — React
+Finsire Clone — React
 
 A pixel-faithful clone of [finsire.com](https://www.finsire.com) built with React.
 
-## Project Structure
+Project Structure
 
 ```
 finsire-clone/
 ├── public/
 │   └── index.html
 ├── src/
-│   ├── App.js                        # Root router — all routes defined here
-│   ├── index.js                      # React entry point
-│   ├── index.css                     # Global styles, CSS variables, fonts
+│   ├── App.js                        
+│   ├── index.js                     
+│   ├── index.css                    
 │   │
-│   ├── components/                   # Reusable UI sections (used on Home page)
-│   │   ├── Navbar.jsx                # Top navigation bar with all links
+│   ├── components/                  
+│   │   ├── Navbar.jsx              
 │   │   ├── Navbar.css
-│   │   ├── Hero.jsx                  # Landing hero with CTA
+│   │   ├── Hero.jsx                 
 │   │   ├── Hero.css
-│   │   ├── Benefits.jsx              # Key benefits section
+│   │   ├── Benefits.jsx            
 │   │   ├── Benefits.css
-│   │   ├── HowItWorks.jsx            # Step-by-step process section
+│   │   ├── HowItWorks.jsx            
 │   │   ├── HowItWorks.css
-│   │   ├── WhyPledge.jsx             # Why pledge mutual funds section
+│   │   ├── WhyPledge.jsx            
 │   │   ├── WhyPledge.css
-│   │   ├── FAQ.jsx                   # Accordion FAQ section
+│   │   ├── FAQ.jsx                   
 │   │   ├── FAQ.css
-│   │   ├── Partners.jsx              # Partner logos strip
+│   │   ├── Partners.jsx           
 │   │   ├── Partners.css
-│   │   ├── StatsBar.jsx              # Stats highlight bar
+│   │   ├── StatsBar.jsx            
 │   │   ├── StatsBar.css
-│   │   ├── CTASection.jsx            # Bottom CTA banner
+│   │   ├── CTASection.jsx          
 │   │   ├── CTASection.css
-│   │   ├── Footer.jsx                # Site-wide footer with all links
+│   │   ├── Footer.jsx               
 │   │   └── Footer.css
 │   │
-│   └── pages/                        # One file per route/page
-│       ├── Page.css                  # Shared styles (back bar, blog grid, hero)
-│       ├── Legal.css                 # Shared styles for Privacy & Terms pages
+│   └── pages/                       
+│       ├── Page.css                 
+│       ├── Legal.css                 
 │       │
-│       ├── AboutUs.jsx               # /about-us
+│       ├── AboutUs.jsx             
 │       │
-│       ├── blogData.js               # Blog post data + full article content (all 9 posts)
-│       ├── Blogs.jsx                 # /blogs — blog listing grid
-│       ├── BlogPost.jsx              # /blog/:slug — individual blog post page
+│       ├── blogData.js             
+│       ├── Blogs.jsx                
+│       ├── BlogPost.jsx              
 │       ├── BlogPost.css
 │       │
-│       ├── BookDemo.jsx              # /book-a-demo — two-column demo request form
+│       ├── BookDemo.jsx              
 │       ├── BookDemo.css
 │       │
-│       ├── Careers.jsx               # /careers — no openings page with SVG illustration
+│       ├── Careers.jsx             
 │       ├── Careers.css
 │       │
-│       ├── Distributors.jsx          # /distributors — B2B platform landing page
+│       ├── Distributors.jsx        
 │       ├── Distributors.css
 │       │
-│       ├── GetLoan.jsx               # /get-a-loan — sign up with phone + PAN
-│       ├── GetLoan.css               # Shared styles for GetLoan and Login pages
+│       ├── GetLoan.jsx              
+│       ├── GetLoan.css             
 │       │
-│       ├── Login.jsx                 # /login — phone number login
+│       ├── Login.jsx               
 │       ├── Login.css
 │       │
-│       ├── Grievance.jsx             # /grievance — WhatsApp + officer details
+│       ├── Grievance.jsx           
 │       ├── Grievance.css
 │       │
-│       ├── Media.jsx                 # /press-media — press coverage listing
+│       ├── Media.jsx                
 │       ├── Media.css
 │       │
-│       ├── PrivacyPolicy.jsx         # /privacy-policy — 22-section legal doc with TOC
-│       ├── TermsConditions.jsx       # /terms-conditions — 14-section legal doc with TOC
-│       └── Legal.css                 # Shared TOC sidebar styles for legal pages
+│       ├── PrivacyPolicy.jsx         
+│       ├── TermsConditions.jsx       
+│       └── Legal.css                 
 │
 └── package.json
 └── README.md
 ```
 
-## Getting Started
+Getting Started
 
-### Prerequisites
+ Prerequisites
 - Node.js 16+ installed
 - npm or yarn
 
-### Installation
+ Installation
 
 ```bash
-# 1. Navigate into the folder
+ 1. Navigate into the folder
 cd finsire-clone
 
-# 2. Install dependencies
+ 2. Install dependencies
 npm install
 
 # 3. Start the dev server
 npm start
 ```
 
-The app will open at **http://localhost:3000**
+The app will open at http://localhost:3000
 
-### Build for Production
+ Build for Production
 
 ```bash
 npm run build
